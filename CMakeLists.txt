@@ -9,6 +9,8 @@ add_executable(${PROJECT_NAME}
     src/Main_app.cpp
     src/MainSystem/Window.hpp
     src/MainSystem/Window.cpp
+    src/MainSystem/Events.hpp
+    src/MainSystem/Events.cpp
 )
 
 add_subdirectory(external/glfw)

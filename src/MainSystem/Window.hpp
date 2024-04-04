@@ -8,7 +8,7 @@
 namespace MainSystem{
     class Window{
     public:
-        static void initialise(int WIDTH, int HEIGHT, const char* title);
+        static void initialization(int WIDTH, int HEIGHT, const char* title);
         static void destructor(GLFWwindow* Win_ptr);
 
         Window(const Window &) = delete;

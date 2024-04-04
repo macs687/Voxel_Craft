@@ -5,7 +5,7 @@ namespace MainSystem{
     GLFWwindow* MainSystem::Window::window_ptr;
 
 
-    void Window::initialise(const int WIDTH, const int HEIGHT, const char* title){
+    void Window::initialization(const int WIDTH, const int HEIGHT, const char* title){
         if (!glfwInit()){
             std::cout << "glfwInit failed!" << std::endl;
             terminate();

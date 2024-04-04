@@ -1,5 +1,5 @@
 #include "Main_app.hpp"
-
+using namespace MainSystem;
 
 GLfloat point[] = {
     0.0f,  0.3f, 0.0f,
@@ -33,8 +33,8 @@ const char* fragment_shader =
 
 
 void Main_app::run(){
-    MainSystem::Window::initialise(width, height, title);
-
+    MainSystem::Window::initialization(width, height, title);
+    MainSystem::Events::initialization();
 
     MainSystem::Window::ClearColor(1.0, 1.0, 1.0, 1.0);
 
@@ -79,9 +79,9 @@ void Main_app::run(){
 
 
     while(!glfwWindowShouldClose(MainSystem::Window::window_ptr)){
+        std::cout << MainSystem::Events::getCursorX(MainSystem::Window::window_ptr) << std::endl;
 
-
-        MainSystem::Window::Clear();
+        
 
         glUseProgram(shader_program);
         glBindVertexArray(vao);
