@@ -5,6 +5,10 @@ project(Voxel_Craft)
 
 add_executable(${PROJECT_NAME}
     src/engine.cpp
+    src/Main_app.hpp
+    src/Main_app.cpp
+    src/MainSystem/Window.hpp
+    src/MainSystem/Window.cpp
 )
 
 add_subdirectory(external/glfw)
