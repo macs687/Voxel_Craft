@@ -5,7 +5,7 @@ namespace MainSystem{
     GLFWwindow* MainSystem::Window::window_ptr;
 
 
-    void Window::initialise(const int WIDTH, const int HEIGHT, const char* title){
+    void Window::initialization(const int WIDTH, const int HEIGHT, const char* title){
         if (!glfwInit()){
             std::cout << "glfwInit failed!" << std::endl;
             terminate();
@@ -65,9 +65,11 @@ namespace MainSystem{
         glfwSetWindowShouldClose(Win_ptr, GLFW_TRUE);
     }
 
+
     void Window::ClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha){
         glClearColor(red, green, blue, alpha);
     }
+
 
     void Window::Clear(){
         glClear(GL_COLOR_BUFFER_BIT);

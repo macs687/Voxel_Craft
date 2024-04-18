@@ -1,5 +1,6 @@
 #pragma once
 
+
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -8,7 +9,7 @@
 namespace MainSystem{
     class Window{
     public:
-        static void initialise(int WIDTH, int HEIGHT, const char* title);
+        static void initialization(int WIDTH, int HEIGHT, const char* title);
         static void destructor(GLFWwindow* Win_ptr);
 
         Window(const Window &) = delete;
