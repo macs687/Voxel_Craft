@@ -3,6 +3,7 @@
 
 #include "Window.hpp"
 
+
 #define LCM GLFW_MOUSE_BUTTON_LEFT
 #define PCM GLFW_MOUSE_BUTTON_RIGHT
 #define SCM GLFW_MOUSE_BUTTON_MIDDLE

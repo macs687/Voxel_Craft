@@ -65,9 +65,11 @@ namespace MainSystem{
         glfwSetWindowShouldClose(Win_ptr, GLFW_TRUE);
     }
 
+
     void Window::ClearColor(GLclampf red, GLclampf green, GLclampf blue, GLclampf alpha){
         glClearColor(red, green, blue, alpha);
     }
+
 
     void Window::Clear(){
         glClear(GL_COLOR_BUFFER_BIT);
